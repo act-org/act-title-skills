@@ -64,21 +64,20 @@ angular.module('actTitleSkillsApp')
 		{name: 'Architects Except Landscape and Naval', code: '17-1011.00'},
 		{name: 'Architectural and Civil Drafters', code: '17-3011.00'}
 		];
+		$scope.skillmap = [
+		  {code: '13-2011.01', skills: ['Active Listening','Mathematics','Reading Comprehension','Writing','Critical Thinking','Speaking','Judgment and Decision Making','Complex Problem Solving','Time Management','Active Learning']},
+		  {code: '27-2011.00', skills: ['Active Listening','Speaking','Reading Comprehension','Social Perceptiveness','Critical Thinking','Monitoring','Judgment and Decision Making','Coordination','Time Management','Active Learning']}
+        ];
 		$scope.$watch('selectedOccupation', function(newValue, oldValue) {
 			var index; 
 			if($scope.selectedOccupation) {
-				console.log('go');
 			  for (index = 0; index < $scope.skillmap.length; ++index) {
 			 	  if($scope.skillmap[index].code === $scope.selectedOccupation.originalObject.code) {
 					$scope.skills = $scope.skillmap[index].skills;
 				  }
 			   }
 		    }
-		});
-		$scope.skillmap = [
-		  {code: '13-2011.01', skills: ['Active Listening','Mathematics','Reading Comprehension','Writing','Critical Thinking','Speaking','Judgment and Decision Making','Complex Problem Solving','Time Management','Active Learning']},
-		  {code: '27-2011.00', skills: ['Active Listening','Speaking','Reading Comprehension','Social Perceptiveness','Critical Thinking','Monitoring','Judgment and Decision Making','Coordination','Time Management','Active Learning']}
-        ];		  
+		});		  
 	})
 	.directive('occupationSkillsSelector', function() {
 	return {
