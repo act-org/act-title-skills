@@ -70,6 +70,7 @@ angular.module('actTitleSkillsApp')
         ];
 		$scope.$watch('selectedOccupation', function(newValue, oldValue) {
 			var index; 
+			$scope.skills = [];
 			if($scope.selectedOccupation) {
 			  for (index = 0; index < $scope.skillmap.length; ++index) {
 			 	  if($scope.skillmap[index].code === $scope.selectedOccupation.originalObject.code) {
