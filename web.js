@@ -1,5 +1,6 @@
 var gzippo = require('gzippo');
 var express = require('express');
+var logger = require('logger');
 var app = express();
  
 app.use(express.logger('dev'));
