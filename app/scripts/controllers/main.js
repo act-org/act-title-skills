@@ -68,6 +68,7 @@ angular.module('actTitleSkillsApp')
 		  {code: '13-2011.01', skills: ['Active Listening','Mathematics','Reading Comprehension','Writing','Critical Thinking','Speaking','Judgment and Decision Making','Complex Problem Solving','Time Management','Active Learning']},
 		  {code: '27-2011.00', skills: ['Active Listening','Speaking','Reading Comprehension','Social Perceptiveness','Critical Thinking','Monitoring','Judgment and Decision Making','Coordination','Time Management','Active Learning']}
         ];
+		$scope.skills = [];
 		$scope.$watch('selectedOccupation', function(newValue, oldValue) {
 			var index; 
 			$scope.skills = [];
