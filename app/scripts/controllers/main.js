@@ -831,7 +831,7 @@ angular.module('actTitleSkillsApp')
 {name: 'Plumbers, Pipefitters, and Steamfitters', code: '47-2152.00'},
 {name: 'Podiatrists', code: '29-1081.00'},
 {name: 'Poets, Lyricists and Creative Writers', code: '27-3043.05'},
-{name: 'Police and Sheriff's Patrol Officers', code: '33-3051.00'},
+{name: 'Police and Sheriffs Patrol Officers', code: '33-3051.00'},
 {name: 'Police Detectives', code: '33-3021.01'},
 {name: 'Police Identification and Records Officers', code: '33-3021.02'},
 {name: 'Police Patrol Officers', code: '33-3051.01'},
